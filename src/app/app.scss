@@ -1,7 +1,7 @@
 @import './shared/mixins';
 
 header {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   .header-container {
     width: 90%;
     margin: 0 auto;
@@ -14,7 +14,7 @@ header {
     }
     nav {
       height: 50px;
-      padding: 0 10px;
+      padding: 10px 0 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -38,6 +38,7 @@ header {
             color: black;
             transition: 0.3s;
             padding: 15px 30px 15px 30px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
 
             &:hover {
               color: rgba(0, 0, 0, 0.5);

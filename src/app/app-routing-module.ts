@@ -7,11 +7,15 @@ const routes: Routes = [
     redirectTo: 'vehicles',
     pathMatch: 'full',
   },
-  // {
-  //   path: 'vehicles',
-  //   loadChildren: () =>
-  //     import('./pages/vehicle-list/vehicle-list-module').then((mod) => mod.VehicleListModule),
-  // },
+  {
+    path: 'vehicles',
+    loadChildren: () =>
+      import('./pages/vehicle-list/vehicle-list-module').then((mod) => mod.VehicleListModule),
+  },
+  {
+    path: '**',
+    redirectTo: 'vehicles',
+  },
 ];
 
 @NgModule({
