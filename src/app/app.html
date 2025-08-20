@@ -1,1 +1,16 @@
-<router-outlet />
+<header>
+  <div class="header-container">
+    <div class="logo-container">
+      <img src="#" alt="LOGO" />
+      <span><a href="#">Sign In</a> </span>
+    </div>
+    <nav>
+      <ul>
+        <li><a [routerLink]="['/vehicle']">List</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="content">
+  <router-outlet />
+</section>
