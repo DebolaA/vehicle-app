@@ -1,0 +1,16 @@
+select {
+  padding: 17px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: #f3f3f3;
+    background: #2c2b2b;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

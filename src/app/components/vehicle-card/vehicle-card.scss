@@ -1,0 +1,89 @@
+.vehicles {
+  margin: 20px auto;
+
+  .vehicle {
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #fefefe;
+    box-shadow: 4px 3px 8px 0px rgb(200 152 44);
+    transition-duration: 0.3s;
+
+    &:hover {
+      box-shadow: 4px 3px 11px 6px rgb(143, 141, 136);
+      transform: translateY(-3px);
+    }
+
+    &-img-container {
+      background-color: transparent;
+      height: 220px;
+      color: #000;
+      text-align: center;
+    }
+
+    &-info {
+      height: 175px;
+      background-color: #000;
+      padding: 5px;
+
+      p {
+        margin: 5px 0;
+
+        &:last-child {
+          margin: 5px 0 10px 0;
+        }
+      }
+    }
+
+    &-name {
+      color: #fff;
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &-origin {
+      color: #fff;
+      font-weight: 500;
+      font-size: 21px;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &-description {
+      color: #fff;
+      font-weight: 300;
+      font-size: 16px;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &-link {
+      color: #fff;
+      text-align: right;
+      margin-top: 10px;
+
+      &:hover {
+        color: yellow;
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+      &:visited {
+        color: red;
+      }
+    }
+  }
+}

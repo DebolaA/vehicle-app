@@ -1,1 +1,39 @@
-<p>vehicle-list works!</p>
+<div class="search-container">
+  <app-search (searchEvt)="performSearch($event)"></app-search>
+</div>
+
+<div>
+  @if (isLoading$ | async) {
+  <div class="isLoading">Loading...</div>
+  }
+</div>
+
+@if(vehicleList$ | async; as vehicleList) {
+<ng-container>
+  @if (errorMessageSubject$ | async; as errorMessage) {
+  <div class="error-message centre">
+    {{ errorMessage }}
+  </div>
+  }
+
+  <div class="centre m-30">
+    <app-sort-dropdown
+      [optionList]="sortOptionList"
+      (valueChangeEvent)="sortSearch($event)"
+    ></app-sort-dropdown>
+  </div>
+
+  <div class="card-container">
+    @for (vehicle of vehicleList | sortBy : payload.orderBy : payload.sort; track $index) {
+    <app-vehicle-card
+      [vehicle]="vehicle"
+      (viewEvt)="viewVehicleDetails(vehicle)"
+    ></app-vehicle-card>
+    }
+  </div>
+
+  <div class="load-more">
+    <button (click)="loadMoreBtn()">Load more</button>
+  </div>
+</ng-container>
+}

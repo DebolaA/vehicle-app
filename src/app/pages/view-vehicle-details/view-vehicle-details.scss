@@ -1,0 +1,11 @@
+.vehicle {
+  &-container {
+    display: flex;
+  }
+
+  &-image,
+  &-details {
+    width: 40%;
+    height: 650px;
+  }
+}

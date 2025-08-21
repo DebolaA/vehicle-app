@@ -1,0 +1,36 @@
+<div class="vehicle-container">
+  <div class="vehicle-image">
+    @if(vehicle?.imageUrl){
+    <img src="{{ vehicle?.imageUrl }}" alt="{{ vehicle?.make }}" />} @if(!vehicle?.imageUrl){
+    <p>No Image</p>
+    }
+  </div>
+  <div class="vehicle-details">
+    <div class="vehicle-view">
+      <h1>Make: {{ vehicle?.make | uppercase }}</h1>
+      <h2>Model:{{ vehicle?.model | titlecase }}</h2>
+      <h4>Year: {{ vehicle?.year }}</h4>
+      <h4>Milage: {{ vehicle?.milage }}</h4>
+    </div>
+    <hr />
+    <h4>Finance Quote</h4>
+    <div class="vehicle-finance-view">
+      <h4>Price: {{ vehicle?.price | currency : 'GBP' : 'symbol-narrow' : '4.2-2' }}</h4>
+      <h4>Deposit: {{ deposit | currency : 'GBP' : 'symbol-narrow' : '4.2-2' }}</h4>
+      <h4>Credit: {{ credit | currency : 'GBP' : 'symbol-narrow' : '4.2-2' }}</h4>
+      <h4>
+        Term:
+        <select (change)="termChangeEvt($event)" [value]="1">
+          @for (selectOptions of termOption; track $index){
+          <option value="selectOptions.id">{{ selectOptions.value }}</option>
+          }
+        </select>
+        <!-- <app-sort-dropdown
+          [optionList]="termOption"
+          (valueChangeEvent)="termChangeEvt($event)"
+        ></app-sort-dropdown> -->
+      </h4>
+      <h4>Monthly Payment: {{ monthlyPymt | currency : 'GBP' : 'symbol-narrow' : '4.2-2' }}</h4>
+    </div>
+  </div>
+</div>

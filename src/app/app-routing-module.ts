@@ -13,6 +13,13 @@ const routes: Routes = [
       import('./pages/vehicle-list/vehicle-list-module').then((mod) => mod.VehicleListModule),
   },
   {
+    path: 'vehicle-details/:id',
+    loadChildren: () =>
+      import('./pages/view-vehicle-details/view-vehicle-details.module').then(
+        (mod) => mod.VehicleDetailsModule
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'vehicles',
   },

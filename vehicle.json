@@ -1,182 +1,204 @@
-[
-  {
-    "make": "Toyota",
-    "model": "Camry",
-    "year": 2021,
-    "price": 23450,
-    "mileage": 15000,
-    "colour": "White",
-    "id": "veh001"
-  },
-  {
-    "make": "Honda",
-    "model": "Civic",
-    "year": 2020,
-    "price": 19800,
-    "mileage": 22000,
-    "colour": "Blue",
-    "id": "veh002"
-  },
-  {
-    "make": "Ford",
-    "model": "F-150",
-    "year": 2019,
-    "price": 27500,
-    "mileage": 30000,
-    "colour": "Black",
-    "id": "veh003"
-  },
-  {
-    "make": "Tesla",
-    "model": "Model 3",
-    "year": 2022,
-    "price": 38990,
-    "mileage": 5000,
-    "colour": "Red",
-    "id": "veh004"
-  },
-  {
-    "make": "Chevrolet",
-    "model": "Malibu",
-    "year": 2018,
-    "price": 15500,
-    "mileage": 45000,
-    "colour": "Silver",
-    "id": "veh005"
-  },
-  {
-    "make": "Nissan",
-    "model": "Altima",
-    "year": 2021,
-    "price": 21000,
-    "mileage": 18000,
-    "colour": "Gray",
-    "id": "veh006"
-  },
-  {
-    "make": "BMW",
-    "model": "X3",
-    "year": 2020,
-    "price": 35500,
-    "mileage": 25000,
-    "colour": "White",
-    "id": "veh007"
-  },
-  {
-    "make": "Hyundai",
-    "model": "Elantra",
-    "year": 2019,
-    "price": 16200,
-    "mileage": 35000,
-    "colour": "Blue",
-    "id": "veh008"
-  },
-  {
-    "make": "Kia",
-    "model": "Sorento",
-    "year": 2022,
-    "price": 29900,
-    "mileage": 12000,
-    "colour": "Green",
-    "id": "veh009"
-  },
-  {
-    "make": "Volkswagen",
-    "model": "Jetta",
-    "year": 2018,
-    "price": 14500,
-    "mileage": 48000,
-    "colour": "Black",
-    "id": "veh010"
-  },
-  {
-    "make": "Toyota",
-    "model": "RV4",
-    "year": 2020,
-    "price": 33450,
-    "mileage": 5000,
-    "colour": "Red",
-    "id": "veh011"
-  },
-  {
-    "make": "Honda",
-    "model": "Accord",
-    "year": 2019,
-    "price": 19800,
-    "mileage": 42000,
-    "colour": "Gray",
-    "id": "veh012"
-  },
-  {
-    "make": "Ford",
-    "model": "CMax",
-    "year": 2007,
-    "price": 35500,
-    "mileage": 69000,
-    "colour": "Yellow",
-    "id": "veh013"
-  },
-  {
-    "make": "Tesla",
-    "model": "Model 8",
-    "year": 2025,
-    "price": 79990,
-    "mileage": 5000,
-    "colour": "White",
-    "id": "veh014"
-  },
-  {
-    "make": "Chevrolet",
-    "model": "Aveo",
-    "year": 2016,
-    "price": 14500,
-    "mileage": 5000,
-    "colour": "Pink",
-    "id": "veh015"
-  },
-  {
-    "make": "Nissan",
-    "model": "Juke",
-    "year": 2023,
-    "price": 26000,
-    "mileage": 10000,
-    "colour": "Purple",
-    "id": "veh016"
-  },
-  {
-    "make": "BMW",
-    "model": "X6",
-    "year": 2024,
-    "price": 75500,
-    "mileage": 17000,
-    "colour": "Black",
-    "id": "veh017"
-  },
-  {
-    "make": "Hyundai",
-    "model": "Kona",
-    "year": 2019,
-    "price": 12500,
-    "mileage": 35000,
-    "colour": "Blue",
-    "id": "veh018"
-  },
-  {
-    "make": "Kia",
-    "model": "Niro",
-    "year": 2022,
-    "price": 19900,
-    "mileage": 12300,
-    "colour": "Green",
-    "id": "veh019"
-  },
-  {
-    "make": "Volkswagen",
-    "model": "Caddy",
-    "year": 2014,
-    "price": 94500,
-    "mileage": 49000,
-    "colour": "White",
-    "id": "veh020"
-  }
-]
+{
+  "vehicles": [
+    {
+      "make": "toyota",
+      "model": "camry",
+      "year": 2021,
+      "price": 23450,
+      "milage": 15000,
+      "colour": "white",
+      "id": "veh001",
+      "imageUrl": ""
+    },
+    {
+      "make": "honda",
+      "model": "civic",
+      "year": 2020,
+      "price": 19800,
+      "milage": 22000,
+      "colour": "Blue",
+      "id": "veh002",
+      "imageUrl": ""
+    },
+    {
+      "make": "ford",
+      "model": "f-150",
+      "year": 2019,
+      "price": 27500,
+      "milage": 30000,
+      "colour": "Black",
+      "id": "veh003",
+      "imageUrl": ""
+    },
+    {
+      "make": "tesla",
+      "model": "model 3",
+      "year": 2022,
+      "price": 38990,
+      "milage": 5000,
+      "colour": "Red",
+      "id": "veh004",
+      "imageUrl": ""
+    },
+    {
+      "make": "chevrolet",
+      "model": "malibu",
+      "year": 2018,
+      "price": 15500,
+      "milage": 45000,
+      "colour": "Silver",
+      "id": "veh005",
+      "imageUrl": ""
+    },
+    {
+      "make": "nissan",
+      "model": "altima",
+      "year": 2021,
+      "price": 21000,
+      "milage": 18000,
+      "colour": "Gray",
+      "id": "veh006",
+      "imageUrl": ""
+    },
+    {
+      "make": "bmw",
+      "model": "x3",
+      "year": 2020,
+      "price": 35500,
+      "milage": 25000,
+      "colour": "White",
+      "id": "veh007",
+      "imageUrl": ""
+    },
+    {
+      "make": "hyundai",
+      "model": "elantra",
+      "year": 2019,
+      "price": 16200,
+      "milage": 35000,
+      "colour": "Blue",
+      "id": "veh008",
+      "imageUrl": ""
+    },
+    {
+      "make": "kia",
+      "model": "sorento",
+      "year": 2022,
+      "price": 29900,
+      "milage": 12000,
+      "colour": "Green",
+      "id": "veh009",
+      "imageUrl": ""
+    },
+    {
+      "make": "volkswagen",
+      "model": "jetta",
+      "year": 2018,
+      "price": 14500,
+      "milage": 48000,
+      "colour": "Black",
+      "id": "veh010",
+      "imageUrl": ""
+    },
+    {
+      "make": "toyota",
+      "model": "rav4",
+      "year": 2020,
+      "price": 33450,
+      "milage": 5000,
+      "colour": "Red",
+      "id": "veh011",
+      "imageUrl": ""
+    },
+    {
+      "make": "honda",
+      "model": "accord",
+      "year": 2019,
+      "price": 19800,
+      "milage": 42000,
+      "colour": "Gray",
+      "id": "veh012",
+      "imageUrl": ""
+    },
+    {
+      "make": "ford",
+      "model": "cmax",
+      "year": 2007,
+      "price": 35500,
+      "milage": 69000,
+      "colour": "yellow",
+      "id": "veh013",
+      "imageUrl": ""
+    },
+    {
+      "make": "tesla",
+      "model": "model 8",
+      "year": 2025,
+      "price": 79990,
+      "milage": 5000,
+      "colour": "white",
+      "id": "veh014",
+      "imageUrl": ""
+    },
+    {
+      "make": "chevrolet",
+      "model": "aveo",
+      "year": 2016,
+      "price": 14500,
+      "milage": 5000,
+      "colour": "pink",
+      "id": "veh015",
+      "imageUrl": ""
+    },
+    {
+      "make": "nissan",
+      "model": "juke",
+      "year": 2023,
+      "price": 26000,
+      "milage": 10000,
+      "colour": "purple",
+      "id": "veh016",
+      "imageUrl": ""
+    },
+    {
+      "make": "bmw",
+      "model": "x6",
+      "year": 2024,
+      "price": 75500,
+      "milage": 17000,
+      "colour": "black",
+      "id": "veh017",
+      "imageUrl": ""
+    },
+    {
+      "make": "hyundai",
+      "model": "kona",
+      "year": 2019,
+      "price": 12500,
+      "milage": 35000,
+      "colour": "blue",
+      "id": "veh018",
+      "imageUrl": ""
+    },
+    {
+      "make": "kia",
+      "model": "niro",
+      "year": 2022,
+      "price": 19900,
+      "milage": 12300,
+      "colour": "green",
+      "id": "veh019",
+      "imageUrl": ""
+    },
+    {
+      "make": "volkswagen",
+      "model": "caddy",
+      "year": 2014,
+      "price": 94500,
+      "milage": 49000,
+      "colour": "white",
+      "id": "veh020",
+      "imageUrl": ""
+    }
+  ]
+}
