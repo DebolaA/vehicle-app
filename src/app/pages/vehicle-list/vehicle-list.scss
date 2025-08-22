@@ -1,4 +1,4 @@
-@import '../../shared/mixins';
+@use '../../shared/mixins';
 
 .card-container {
   display: flex;
@@ -7,7 +7,7 @@
   margin: 20px auto;
   max-width: 90%;
 
-  @include response(md) {
+  @include mixins.response(md) {
     max-width: 95%;
   }
 }
