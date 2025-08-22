@@ -7,10 +7,11 @@ import { HTTP_INTERCEPTORS, provideHttpClient } from '@angular/common/http';
 import { HttpResponseInterceptor } from './interceptor/http-response.interceptor';
 import { HttpRequestInterceptor } from './interceptor/http-request.interceptor';
 import { GlobalErrorHandler } from './utils/global-error-handler';
+import { SharedModule } from './shared-module';
 
 @NgModule({
   declarations: [App],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideHttpClient(),

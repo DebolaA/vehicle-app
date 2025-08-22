@@ -20,17 +20,16 @@
       <h4>Credit: {{ credit | currency : 'GBP' : 'symbol-narrow' : '4.2-2' }}</h4>
       <h4>
         Term:
-        <select (change)="termChangeEvt($event)" [value]="1">
-          @for (selectOptions of termOption; track $index){
-          <option value="selectOptions.id">{{ selectOptions.value }}</option>
-          }
-        </select>
-        <!-- <app-sort-dropdown
+
+        <app-sort-dropdown
           [optionList]="termOption"
           (valueChangeEvent)="termChangeEvt($event)"
-        ></app-sort-dropdown> -->
+        ></app-sort-dropdown>
       </h4>
-      <h4>Monthly Payment: {{ monthlyPymt | currency : 'GBP' : 'symbol-narrow' : '4.2-2' }}</h4>
+      <h4>
+        Monthly Payment: {{ monthlyPymt | currency : 'GBP' : 'symbol-narrow' : '4.2-2' }} for
+        {{ selectedTerm }} months
+      </h4>
     </div>
   </div>
 </div>

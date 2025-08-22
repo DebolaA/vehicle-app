@@ -1,4 +1,4 @@
-@import './shared/mixins';
+@use './shared/mixins';
 
 header {
   border-bottom: 3px solid black;
@@ -19,7 +19,7 @@ header {
       justify-content: space-between;
       align-items: center;
 
-      @include response(md) {
+      @include mixins.response(md) {
         height: 70px;
       }
 

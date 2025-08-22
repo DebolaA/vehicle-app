@@ -63,7 +63,7 @@ export class ViewVehicleDetails {
     if (veh) {
       this.deposit = veh.price ? veh.price * 0.1 : 0;
       this.credit = veh.price ? veh.price - this.deposit : 0;
-      this.monthlyPymt = this.credit % this.selectedTerm;
+      this.monthlyPymt = this.credit / this.selectedTerm;
     }
   }
 }

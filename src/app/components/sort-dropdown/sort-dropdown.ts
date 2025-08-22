@@ -11,6 +11,10 @@ export class SortDropdownComponent {
   @Input()
   optionList!: ISelectOption[];
 
+  ngOnInit(): void {
+    console.log(this.optionList);
+  }
+
   @Output()
   valueChangeEvent = new EventEmitter<ISelectOption>();
 

@@ -4,10 +4,11 @@
     id="order_dropdown"
     #order_dropdown
     orderBy
+    [optionList]="optionList"
     (emittedValue)="notifyValueChange($event)"
   >
     @for (selectOptions of optionList; track $index){
-    <option value="selectOptions.id">{{ selectOptions.value }}</option>
+    <option [value]="selectOptions.id">{{ selectOptions.value }}</option>
     }
   </select>
 </span>
