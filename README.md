@@ -32,6 +32,4 @@ open your browser and navigate to `http://localhost:4200/`. The application will
 This is a two page application to list vehicles and also view the vehicle details
 
 /vehicles
-/vehicles/:id
-
-The application was built
+/vehicle-details/:id
