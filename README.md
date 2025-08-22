@@ -11,7 +11,7 @@ https://github.com/DebolaA/vehicle-app.git
 To start a local development server, run:
 
 ```bash
-npm run serve
+npm run server
 ```
 
 Once the server is running,
