@@ -5,7 +5,6 @@
     #order_dropdown
     orderBy
     [optionList]="optionList"
-    (emittedValue)="notifyValueChange($event)"
   >
     @for (selectOptions of optionList; track $index){
     <option [value]="selectOptions.id">{{ selectOptions.value }}</option>

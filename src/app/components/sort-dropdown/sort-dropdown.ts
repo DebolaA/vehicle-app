@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ISelectOption } from '../../model/VehicleModel';
+import { BehaviorSubject } from 'rxjs';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-sort-dropdown',
@@ -11,12 +13,14 @@ export class SortDropdownComponent {
   @Input()
   optionList!: ISelectOption[];
 
-  ngOnInit(): void {}
+  selectedOption$ = new BehaviorSubject<number>(0);
 
   @Output()
   valueChangeEvent = new EventEmitter<ISelectOption>();
 
-  notifyValueChange(option: any): void {
-    this.valueChangeEvent.emit(option);
+  ngOnInit(): void {
+    this.selectedOption$.pipe().subscribe((option: number) => {
+      this.valueChangeEvent.emit(this.optionList[option]);
+    });
   }
 }
