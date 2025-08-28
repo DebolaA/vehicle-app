@@ -1,15 +1,5 @@
 import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import {
-  debounceTime,
-  distinctUntilChanged,
-  fromEvent,
-  Observable,
-  of,
-  Subject,
-  switchMap,
-} from 'rxjs';
-import { UnSub } from '../../utils/un-sub';
+import { debounceTime, distinctUntilChanged, fromEvent, Observable, of, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-search',
@@ -17,7 +7,7 @@ import { UnSub } from '../../utils/un-sub';
   styleUrl: './search.component.scss',
   standalone: false,
 })
-export class SearchComponent extends UnSub {
+export class SearchComponent {
   @Output()
   searchEvt = new EventEmitter<string>();
 
@@ -26,17 +16,12 @@ export class SearchComponent extends UnSub {
 
   ngAfterViewInit(): void {
     fromEvent(this.searchInput.nativeElement as HTMLInputElement, 'keyup')
-      .pipe(
-        debounceTime(500),
-        distinctUntilChanged(),
-        switchMap((event: Event) => {
-          const query = (event.target as HTMLInputElement).value;
-          this.searchEvt.emit(query);
-          console.log(query);
-          return of(event);
-        })
-      )
-      .subscribe((data) => {});
+      .pipe(debounceTime(500), distinctUntilChanged())
+      .subscribe((event: Event) => {
+        const query = (event.target as HTMLInputElement).value;
+        this.searchEvt.emit(query);
+        return of(event);
+      });
   }
 
   clearSearch() {
